@@ -19,7 +19,17 @@ export const Feed = () => {
         <div className='feed'>
             <StoryReel />
             <MessageSender />
-            {/* posts */}
+            {posts.map((post) => (
+                <Post
+                    key={post.data.id}
+                    profilePic={post.data.profilePic}
+                    message={post.data.message}
+                    timestamp={post.data.timeStamp}
+                    username={post.data.username}
+                    image={post.data.image}
+                />
+            ))
+            }
         </div>
     )
 }
