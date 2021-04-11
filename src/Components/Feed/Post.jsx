@@ -24,7 +24,7 @@ export const Post = ({ profilePic, image, username, timestamp, message }) => {
                 <p>{message}</p>
             </div>
             <div className='post-image'>
-                <img src={image} alt='chosen image' />
+                {image != null ? <img src={image} /> : <></>}
             </div>
             <div className='post-options'>
                 <div className='post-option'>

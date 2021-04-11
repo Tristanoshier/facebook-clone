@@ -3,7 +3,7 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { Avatar } from '@material-ui/core';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../../StateManagement/StateProvider';
 import db from '../Firebase/firebase';
 import firebase from 'firebase';
 
