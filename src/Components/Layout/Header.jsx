@@ -12,11 +12,11 @@ import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import { useStateValue } from '../../StateManagement/StateProvider';
 
 export const Header = () => {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
     return (
         <div className='header'>
             <div className="header-left">
-                <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png" />
+                <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png" alt='facebook logo'/>
                 <div className="header-input">
                     <SearchIcon />
                     <input placeholder="Search Facebook" type='text' />

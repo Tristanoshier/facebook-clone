@@ -8,7 +8,7 @@ import db from '../Firebase/firebase';
 import firebase from 'firebase';
 
 export const MessageSender = () => {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
     const [input, setInput] = useState('');
     const [imageURL, setImageURL] = useState('');
 

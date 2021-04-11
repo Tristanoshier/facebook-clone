@@ -14,17 +14,17 @@ export const Post = ({ profilePic, image, username, timestamp, message }) => {
                     className='post-avatar'
                  />
                  <div className='post-topInfo'>
-                     <p>
+                     <div>
                         <h3>{username}</h3>
                         <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
-                    </p>
+                    </div>
                  </div>
             </div>
             <div className='post-bottom'>
                 <p>{message}</p>
             </div>
             <div className='post-image'>
-                {image != null ? <img src={image} /> : <></>}
+                {image ? <img src={image} alt='post' /> : <></>}
             </div>
             <div className='post-options'>
                 <div className='post-option'>

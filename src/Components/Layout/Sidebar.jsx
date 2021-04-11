@@ -9,7 +9,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useStateValue } from '../../StateManagement/StateProvider';
 
 export const Sidebar = () => {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
     return (
         <div className='sidebar'>
             <SidebarRow src={user.photoURL} title={user.displayName} />

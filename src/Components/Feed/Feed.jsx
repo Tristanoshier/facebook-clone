@@ -19,9 +19,9 @@ export const Feed = () => {
         <div className='feed'>
             <StoryReel />
             <MessageSender />
-            {posts.map((post) => (
+            {posts.map((post, index) => (
                 <Post
-                    key={post.data.id}
+                    key={index}
                     profilePic={post.data.profilePic}
                     message={post.data.message}
                     timestamp={post.data.timeStamp}

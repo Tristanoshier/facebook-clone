@@ -4,11 +4,12 @@ import { useStateValue } from '../../StateManagement/StateProvider';
 import { actionTypes } from '../../StateManagement/reducer';
 
 export const Login = () => {
-    const [state, dispatch] = useStateValue();
+    const [ state, dispatch] = useStateValue();
 
     const signIn = () => {
         auth.signInWithPopup(provider)
         .then((result) => {
+            console.log(state)
             dispatch({
                 type: actionTypes.SET_USER,
                 user: result.user
