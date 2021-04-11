@@ -8,3 +8,11 @@
 @import './story.css';
 @import './storyreel.css';
 
+.app {
+    background-color: #f1f2f5;
+    height: 100%;
+}
+
+.app-body {
+    display: flex;
+}
